@@ -1,14 +1,25 @@
 <?xml version="1.0"?>
 <root>
+    <appdef>
+        <appname>VSCODE</appname>
+        <equal>com.microsoft.VSCode</equal>
+    </appdef>
     <list>
         <item>
             <name>LeaveInsMode with EISUU(Terminal)</name>
             <identifier>private.app_terminal_esc_with_eisuu</identifier>
             <only>TERMINAL</only>
-            <inputsource_only>JAPANESE</inputsource_only>
-            <autogen>--KeyToKey-- KeyCode::ESCAPE,                    KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
-            <autogen>--KeyToKey-- KeyCode::BRACKET_RIGHT, VK_CONTROL, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
-            <autogen>--KeyToKey-- KeyCode::J, VK_CONTROL,             KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+            <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+            <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
         </item>
     </list>
+    <item>
+        <name>Custom VSCode</name>
+        <item>
+            <name>Custom VSCode Ctrl+M to Return</name>
+            <identifier>private.ctrl_m_to_return_vscode</identifier>
+            <only>VSCODE</only>
+            <autogen>--KeyToKey-- KeyCode::M, ModifierFlag::CONTROL_L, KeyCode::RETURN</autogen>
+        </item>
+    </item>
 </root>
