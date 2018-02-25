@@ -28,6 +28,8 @@
             <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
             <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
             <autogen>--KeyToKey-- KeyCode::BRACKET_RIGHT, VK_CONTROL, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+            <!-- C-o: insert -once normal mode- insert -->
+            <autogen>--KeyToKey-- KeyCode::O, VK_CONTROL, KeyCode::O, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
         </item>
     </item>
 </root>
